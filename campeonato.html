@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin - Copas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginBox">
+  <h2>🔐 Acesso Admin</h2>
+  <input type="password" id="senhaInput" placeholder="Senha">
+  <button onclick="login()">Entrar</button>
+</div>
+
+<div id="adminBox" style="display:none">
+
+  <button onclick="logout()">🚪 Sair</button>
+
+  <h1>🏆 Administração de Copas</h1>
+
+  <div id="temporadaBox"></div>
+
+  <hr>
+
+  <select onchange="iniciarCampeonato(this.value)">
+    <option value="">Nova Copa</option>
+    <option value="8">8 jogadores</option>
+    <option value="12">12 jogadores</option>
+    <option value="16">16 jogadores</option>
+  </select>
+
+  <div id="mataMata"></div>
+
+  <h2>📊 Ranking da Temporada</h2>
+  <ul id="rankingTemp"></ul>
+
+  <h2>📜 Histórico das Copas</h2>
+  <ul id="historico"></ul>
+
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script src="auth.js"></script>
+
+</body>
+</html>

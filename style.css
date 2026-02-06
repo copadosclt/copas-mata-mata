@@ -1,0 +1,45 @@
+body {
+  background: #0f172a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 6px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+#loginBox {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 100px auto;
+}
+
+#adminBox button:first-child {
+  background: #dc2626;
+  color: white;
+}
+
+.chave, li {
+  background: #1e293b;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 360px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
