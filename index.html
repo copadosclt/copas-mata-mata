@@ -2,18 +2,94 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Campeonato Gamer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copas Mata-Mata</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .copa {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .copa h2 {
+      margin: 0 0 10px 0;
+    }
+
+    .info {
+      margin: 5px 0;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      background: #22c55e;
+      color: #000;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    button:active {
+      opacity: 0.8;
+    }
+  </style>
 </head>
 <body>
 
-  <h1>🏆 Campeonato Gamer</h1>
-  <p>Organização oficial do campeonato</p>
+  <h1>🏆 Modelos de Copa</h1>
 
-  <a href="campeonato.html">
-    <button>Ver Campeonato</button>
-  </a>
+  <div class="copa">
+    <h2>Bomba Patch – PS2</h2>
+    <div class="info">👥 Jogadores: 16</div>
+    <div class="info">⚔️ Formato: Mata-mata</div>
+    <div class="info">⏱️ Tempo: 5 minutos</div>
+    <button onclick="selecionarCopa('Bomba Patch')">
+      Abrir esta copa
+    </button>
+  </div>
+
+  <div class="copa">
+    <h2>FIFA – PS5</h2>
+    <div class="info">👥 Jogadores: 16</div>
+    <div class="info">⚔️ Formato: Mata-mata</div>
+    <div class="info">⏱️ Tempo: 3 minutos</div>
+    <button onclick="selecionarCopa('FIFA')">
+      Abrir esta copa
+    </button>
+  </div>
+
+  <div class="copa">
+    <h2>PES – PS5</h2>
+    <div class="info">👥 Jogadores: 16</div>
+    <div class="info">⚔️ Formato: Mata-mata</div>
+    <div class="info">⏱️ Tempo: 3 minutos</div>
+    <button onclick="selecionarCopa('PES')">
+      Abrir esta copa
+    </button>
+  </div>
+
+  <script>
+    function selecionarCopa(nome) {
+      alert('Copa selecionada: ' + nome);
+    }
+  </script>
 
 </body>
 </html>
